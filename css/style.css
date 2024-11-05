@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hex-content, .rgb-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.hex-content {
+    left: 0;
+    background-color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rgb-content {
+    right: 0;
+    background-color: grey;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#clock {
+    font-weight: 300;
+    font-size: 120px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#color-hex, #color-rgb {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+}
